@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BAMBULBEE — Robotics & 3D Printing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- WebGL Hero -->
+  <div id="hero">
+    <canvas id="bg"></canvas>
+
+    <!-- Fallback -->
+    <div id="fallback">
+      <div class="noise"></div>
+    </div>
+
+    <div class="hero-content">
+      <h1>BAMBULBEE</h1>
+      <p>Robotics & 3D Printing Service</p>
+      <span class="tagline">Design • Prototype • Build</span>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <section class="content">
+    <div class="block">
+      <h2>What We Do</h2>
+      <p>
+        BAMBULBEE delivers precise, functional robotics solutions and custom
+        3D-printed parts — from early prototypes to production-ready designs.
+      </p>
+    </div>
+
+    <div class="block grid">
+      <div>
+        <h3>Robotics</h3>
+        <p>
+          Embedded systems, motion control, automation,
+          and custom hardware built with reliability in mind.
+        </p>
+      </div>
+      <div>
+        <h3>3D Printing</h3>
+        <p>
+          High-quality prints, functional materials,
+          and rapid iteration for engineering-grade parts.
+        </p>
+      </div>
+      <div>
+        <h3>Prototyping</h3>
+        <p>
+          From concept to physical object —
+          we help you iterate fast and intelligently.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>© BAMBULBEE</span>
+    <span>Built to explore & create</span>
+  </footer>
+
+  <!-- Libraries -->
+  <script src="https://unpkg.com/three@0.158.0/build/three.min.js"></script>
+  <script src="https://unpkg.com/gsap@3.12.5/dist/gsap.min.js"></script>
+
+  <!-- App -->
+  <script src="main.js"></script>
+</body>
+</html>
