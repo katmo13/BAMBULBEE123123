@@ -12,7 +12,6 @@
 
 html, body {
   margin: 0;
-  padding: 0;
   font-family: 'Inter', sans-serif;
   background: var(--bg);
   color: var(--text);
@@ -29,7 +28,6 @@ canvas#bg {
   inset: 0;
   width: 100%;
   height: 100%;
-  display: block;
 }
 
 #fallback {
@@ -42,39 +40,82 @@ canvas#bg {
 .noise {
   position: absolute;
   inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='1'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.08'/%3E%3C/svg%3E");
+  opacity: 0.08;
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
   height: 100%;
+  max-width: 900px;
+  padding: 6vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 6vw;
-  max-width: 900px;
 }
 
 .hero-content h1 {
   font-size: clamp(3rem, 8vw, 6rem);
-  font-weight: 600;
   letter-spacing: 0.15em;
   margin: 0;
 }
 
 .hero-content p {
-  margin: 1rem 0 0;
-  font-size: 1.25rem;
   color: var(--muted);
+  font-size: 1.25rem;
 }
 
 .tagline {
   margin-top: 2rem;
-  font-size: 0.9rem;
   letter-spacing: 0.2em;
-  text-transform: uppercase;
+  font-size: 0.9rem;
   color: var(--accent);
+}
+
+.works-btn {
+  margin-top: 2.5rem;
+  padding: 0.9rem 2rem;
+  border: 1px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+  letter-spacing: 0.2em;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.works-btn:hover {
+  background: var(--accent);
+  color: #000;
+}
+
+.works {
+  padding: 6rem 6vw;
+  background: #0a0705;
+}
+
+.works h2 {
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+}
+
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.works-grid img {
+  width: 100%;
+  border-radius: 14px;
+  transition: transform 0.4s;
+}
+
+.works-grid img:hover {
+  transform: scale(1.05);
+}
+
+.hidden {
+  display: none;
 }
 
 section.content {
@@ -89,11 +130,9 @@ section.content {
 
 .block h2 {
   font-size: 2.5rem;
-  font-weight: 500;
 }
 
 .block p {
-  font-size: 1.1rem;
   color: var(--muted);
   line-height: 1.7;
 }
@@ -104,17 +143,12 @@ section.content {
   gap: 3rem;
 }
 
-.grid h3 {
-  color: var(--accent);
-  font-weight: 500;
-  letter-spacing: 0.1em;
-}
-
 footer {
-  display: flex;
-  justify-content: space-between;
   padding: 2rem 6vw;
   font-size: 0.85rem;
-  color: var(--muted);
   background: #0a0705;
+  color: var(--muted);
+  display: flex;
+  justify-content: space-between;
 }
+
