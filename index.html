@@ -13,11 +13,11 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- WebGL Hero -->
+
+  <!-- Hero -->
   <div id="hero">
     <canvas id="bg"></canvas>
 
-    <!-- Fallback -->
     <div id="fallback">
       <div class="noise"></div>
     </div>
@@ -26,10 +26,30 @@
       <h1>BAMBULBEE</h1>
       <p>Robotics & 3D Printing Service</p>
       <span class="tagline">Design • Prototype • Build</span>
+
+      <!-- BUTTON -->
+      <button id="worksBtn" class="works-btn">
+        OUR RECENT WORKS
+      </button>
     </div>
   </div>
 
-  <!-- Content -->
+  <!-- WORKS SECTION -->
+  <section id="works" class="works hidden">
+    <h2>Our Recent Works</h2>
+
+    <div class="works-grid">
+      <!-- ⬇⬇⬇ ONLY EDIT FILENAMES HERE ⬇⬇⬇ -->
+
+      <img src="works/bumbulbee_1.jpeg">
+      <img src="works/bumbulbee_1.jpeg">
+      <img src="works/bumbulbee_1.jpeg">
+
+      <!-- ⬆⬆⬆ ADD / REMOVE LINES AS NEEDED ⬆⬆⬆ -->
+    </div>
+  </section>
+
+  <!-- CONTENT -->
   <section class="content">
     <div class="block">
       <h2>What We Do</h2>
@@ -42,24 +62,15 @@
     <div class="block grid">
       <div>
         <h3>Robotics</h3>
-        <p>
-          Embedded systems, motion control, automation,
-          and custom hardware built with reliability in mind.
-        </p>
+        <p>Embedded systems, automation, motion control.</p>
       </div>
       <div>
         <h3>3D Printing</h3>
-        <p>
-          High-quality prints, functional materials,
-          and rapid iteration for engineering-grade parts.
-        </p>
+        <p>Functional prints and rapid prototyping.</p>
       </div>
       <div>
         <h3>Prototyping</h3>
-        <p>
-          From concept to physical object —
-          we help you iterate fast and intelligently.
-        </p>
+        <p>From concept to physical product.</p>
       </div>
     </div>
   </section>
@@ -77,3 +88,4 @@
   <script src="main.js"></script>
 </body>
 </html>
+
